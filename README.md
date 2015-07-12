@@ -5,8 +5,9 @@ Hotel Reserve System on Perl
 
 Dependencies and Setup
 * MySession.pm
- - # cpan install CGI
- - # cpan install CGI::Session
+ - # CGI
+ - # CGI::Session
+ - # Time::Piece
 
 * tmp/
  - $ mkdir tmp
