@@ -27,6 +27,8 @@ sub error{
 	&header('エラー');
 	print "<p>$msg</p>";
 	&footer;
+	$mysess->close;
+	$mysess->delete;
 	die "$msg";
 }
 

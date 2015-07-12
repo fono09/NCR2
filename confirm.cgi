@@ -29,10 +29,8 @@ if($sess->params->{'name'} eq ""){
 	&error("電話番号を正しく入力してください");
 }elsif($sess->params->{'mail'} !~ /\w+\@\w+[\.\w]+/){
 	&error("メールアドレスを正しく入力してください");
-}elsif($sess->params->{'day'} < 1 || $sess->params->{'day'} =~ /\d{2}/ || $sess->params->{'day'} > 9){
+}elsif($sess->params->{'day'} < 1 || $sess->params->{'day'} > 9){
 	&error("宿泊数を正しく入力してください<br>尚、宿泊数は10日以下となっておりますので予めご了承くださいませ");
-}elsif($sess->params->{'date'} !~ /(\d{4})\/(\d{2})\/(\d{2})/){
-	&error("チェックイン日を正しく入力してください");
 }elsif($t > $i){
 	&error("過去の予約は受け付けておりません");
 }
