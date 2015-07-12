@@ -3,7 +3,6 @@ package MySession;
 use Moose;
 use CGI;
 use CGI::Session;
-use Data::Dumper;
 
 has 'cgi' => (
 	is => 'rw',

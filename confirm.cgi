@@ -4,7 +4,6 @@ use warnings;
 
 use Time::Piece;
 use MySession;
-use Data::Dumper;
 
 require './template.pl';
 my $sess = $main::mysess;
