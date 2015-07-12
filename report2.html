@@ -1,0 +1,31 @@
+<html lang="ja">
+<head>
+<title>予約システム|入力</title>
+</head>
+<body>
+<h1>旅館予約フォーム</h1>
+<form method="post" action="confirm.cgi">
+<p>お客様のお名前とご連絡先<br>
+お名前:<input type="text" name="name"><br>
+電話番号:<input type="text" name="phone"><br>
+メールアドレス:<input type="text" name="mail"><br>
+</p>
+<p>チェックインされる日・宿泊数<br>
+チェックイン日(yyyy/mm/dd):<input type="text" name="date"><br>
+宿泊数:<input type="text" name="day"><br>
+</p>
+<p>部屋の種類と料金<br>
+<input type="radio" name="room" value="1" checked>シングル(7,000円)<br>
+<input type="radio" name="room" value="2">ツイン(12,000円)<br>
+<input type="radio" name="room" value="3">ダブル(15,000円)<br>
+<input type="radio" name="room" value="4">デラックスツイン(21,000円)<br>
+<input type="radio" name="room" value="5">スイート(35,000円)
+</p>
+<p>禁煙ルームのご希望<br>
+<input type="radio" name="smoke" value="1">禁煙ルームを希望<br>
+<input type="radio" name="smoke" value="0" checked>どちらでも良い
+</p>
+
+<input type="submit" value="送信">
+<input type="reset" value="リセット">
+</form>
